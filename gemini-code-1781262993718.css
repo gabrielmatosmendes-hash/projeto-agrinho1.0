@@ -1,0 +1,100 @@
+/* Configurações Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f8f3;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1b5e20, #4caf50);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Cartões de Conteúdo */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #4caf50;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+/* Botão de Interação */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Classes utilitárias */
+.hidden {
+    display: none;
+}
+
+#mensagem-agradecimento {
+    margin-top: 15px;
+    color: #1b5e20;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #1b5e20;
+    color: #e8f5e9;
+    font-size: 0.9rem;
+}
+
+/* Animação simples */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
